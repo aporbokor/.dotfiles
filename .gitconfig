@@ -1,0 +1,8 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Apor Bokor
+	email = aporbokor@protonmail.com
+[core]
+	editor = nvim
+
