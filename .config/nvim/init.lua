@@ -304,6 +304,18 @@ vim.cmd [[autocmd BufNewFile,BufReadPost *.sol set filetype=solidity]]
 
 vim.cmd [[autocmd BufNewFile,BufReadPost *.md set filetype=pandoc]]
 
+--C++ configuration
+vim.cmd [[autocmd BufNewFile *.cpp 0r ~/Templates/template.cpp]]
+vim.cmd [[set makeprg=g++\ -static\ -DDEBUG\ -lm\ -s\ -x\ c++\ -Wall\ -Wextra\ -O2\ -std=c++17\ -o\ %:r\ %]]
+vim.cmd [[autocmd filetype cpp nnoremap <F9> :w <bar> :make <CR>]]
+
+-- Python configuration
+-- TODO
+-- vim.cmd [[autocmd BufNewFile * .py 0r ~/Templates/template.py]]
+
+-- Racket configuration
+-- vim.cmd [[autocmd BufNewFile * .rkt 0r ~/Templates/template.rkt]]
+
 vim.g['airline#extensions#wordcount#enabled'] = 1
 vim.g['airline#extensions#wordcount#filetypes'] = { 'help', 'markdown', 'rst', 'org', 'text', 'asciidoc', 'tex', 'mail', 'pandoc' }
 
