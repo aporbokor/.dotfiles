@@ -83,6 +83,9 @@ vim.opt.listchars = {
 }
 
 vim.opt.undofile = true
+-- TODO
+-- vim.cmd[[filetype plugin on]]
+
 
 vim.opt.autoread = true
 vim.cmd [[autocmd BufEnter,FocusGained * if mode() == 'n' && getcmdwintype() == '' | checktime | endif]]
