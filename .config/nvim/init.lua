@@ -341,7 +341,8 @@ vim.cmd [[autocmd BufNewFile,BufReadPost *.sol set filetype=solidity]]
 vim.cmd [[autocmd BufNewFile,BufReadPost *.md set filetype=pandoc]]
 
 --C++ configuration
-vim.cmd [[autocmd BufNewFile *.cpp 0r ~/Templates/template.cpp]]
+-- vim.cmd [[autocmd BufNewFile *.cpp 0r ~/Templates/template.cpp]]
+vim.cmd [[autocmd BufNewFile *.cpp 0r ~/Templates/std_lib_facilities.cpp]]
 vim.cmd [[set makeprg=g++\ -static\ -DDEBUG\ -lm\ -s\ -x\ c++\ -Wall\ -Wextra\ -O2\ -std=c++17\ -o\ %:r\ %]]
 vim.cmd [[autocmd filetype cpp nnoremap <F9> :w <bar> :make <CR>]]
 
