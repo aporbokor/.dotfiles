@@ -5,4 +5,25 @@
 	email = aporbokor@protonmail.com
 [core]
 	editor = nvim
-
+[alias]
+	st = status -sb
+	fe = fetch --tags -f
+	cl = clone --recursive
+	bs = switch
+	bsd = bs --detach
+	bnew = switch --no-track -c
+	br = branch
+	c = commit
+	ca = commit --amend --no-edit
+	rb = rebase
+	la = l --all
+	ff = merge --ff-only
+	d = diff
+	
+	git = !git
+	g = !git
+[pull]
+	rebase = true
+[rebase]
+	autoSquash = true
+	autoStash = true

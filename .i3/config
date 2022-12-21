@@ -349,7 +349,7 @@ set $custom #1c5766
 bar {
 	i3bar_command i3bar
 	status_command i3status
-    tray_output primary
+    tray_output none
 
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'

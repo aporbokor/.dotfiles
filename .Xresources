@@ -10,7 +10,7 @@ Xft.rgba: rgb
 
 URxvt*buffered: true
 URxvt*cursorBlink: true
-URxvt*font: xft:DejaVu Sans Mono for Powerline:size=9
+URxvt*font: xft:DejaVu Sans Mono for Powerline:size=10
 URxvt*letterSpace: -1
 !URxvt*depth: 32
 URxvt*borderless: 1
@@ -18,7 +18,7 @@ URxvt*scrollBar: false
 URxvt*saveLines: 5000
 !URxvt*termName: rxvt-unicode-256color
 
-URxvt.perl-ext-common: default,selection-to-clipboard,url-select,fullscreen,font-size
+URxvt.perl-ext-common: default,selection-to-clipboard,url-select,fullscreen,font-size,resize-font
 
 URxvt.keysym.C-i: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/xdg-open
@@ -28,11 +28,9 @@ URxvt.colorUL: #4682B4
 URxvt.keysym.F11: perl:fullscreen:switch
 
 ! Changing font size
-URxvt.keysym.C-Up:		perl:font-size:increase
-URxvt.keysym.C-Down:	perl:font-size:decrease
-URxvt.keysym.C-S-Up:    perl:font-size:incglobal
-URxvt.keysym.C-S-Down:  perl:font-size:decglobal
-URxvt.keysym.C-0:		perl:font-size:reset
+URxvt.keysym.C-Up:		resize-font:bigger
+URxvt.keysym.C-Down:	resize-font:smaller
+URxvt.keysym.C-Right:		resize-font:reset
 
 ! Disable Ctrl-Shift for keycap insert
 URxvt.iso14755: false
